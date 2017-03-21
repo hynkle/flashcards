@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   // Glossary Logic:
   dictionary.forEach(function(currentValue) {
-    $("#glossaryList").prepend("<li>" + currentValue[0] + " - " + currentValue[1] + "</li>");
+    $("#glossaryList").prepend("<li>" + "<strong>" + currentValue[0] + "</strong>" + " - " + currentValue[1] + "</li>");
   });
 });
 

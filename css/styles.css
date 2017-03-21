@@ -1,10 +1,3 @@
-/*#definitionPanel {
-  display: none;
-}
-
-#conceptPanel {
-  display: none;
-}*/
 h1, p {
   text-align: center;
 }
@@ -14,4 +7,7 @@ h1, p {
 .row button {
   position: relative;
   left: 40%;
+}
+li {
+  font-size: 20px;
 }

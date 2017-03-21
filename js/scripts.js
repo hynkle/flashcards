@@ -1,21 +1,10 @@
 $(document).ready(function() {
-
-  $("#conceptPanel").click(function() {
-    $("#definitionPanel").show();
-
-  });
-
-  $("#definitionPanel").click(function() {
-    $("#conceptPanel").show();
-  });
-
-  $("#nextButton").click(function() {
+  var textLoad = function() {
     $("#conceptName").empty();
     $("#conceptDef").empty();
     var randomNumber = Math.floor((Math.random() * 18));
     $("#conceptName").prepend(dictionary[randomNumber][0]);
     $("#conceptDef").prepend(dictionary[randomNumber][1]);
-
     var randomPanelNumber = Math.round(Math.random());
 
     if (randomPanelNumber === 0) {
@@ -23,9 +12,20 @@ $(document).ready(function() {
     } else {
       $("#definitionPanel").hide();
     }
+  };
+  textLoad();
 
+  $("#conceptPanel").click(function() {
+    $("#definitionPanel").show();
   });
 
+  $("#definitionPanel").click(function() {
+    $("#conceptPanel").show();
+  });
+
+  $("#nextButton").click(function() {
+    textLoad();
+  });
 });
 
 var conceptTitle = "JavaScript";

@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+}
+.container {
+  position: relative;
+}
+.row button {
+  position: relative;
+  left: 40%;
+}

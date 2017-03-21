@@ -1,6 +1,9 @@
 h1, p {
   text-align: center;
 }
+p, .panel-heading {
+  font-size: 18px;
+}
 .container {
   position: relative;
 }

@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   $("#conceptPanel").click(function() {
     $("#definitionPanel").show();
+
   });
 
   $("#definitionPanel").click(function() {
@@ -14,6 +15,15 @@ $(document).ready(function() {
     var randomNumber = Math.floor((Math.random() * 18));
     $("#conceptName").prepend(dictionary[randomNumber][0]);
     $("#conceptDef").prepend(dictionary[randomNumber][1]);
+
+    var randomPanelNumber = Math.round(Math.random());
+
+    if (randomPanelNumber === 0) {
+      $("#conceptPanel").hide();
+    } else {
+      $("#definitionPanel").hide();
+    }
+
   });
 
 });

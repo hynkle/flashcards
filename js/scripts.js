@@ -24,6 +24,8 @@ $(document).ready(function() {
   });
 
   $("#nextButton").click(function() {
+    $("#definitionPanel").show();
+    $("#conceptPanel").show();
     textLoad();
   });
 });
